@@ -1,77 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tracks - DRISHTI 2024</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>DRISHTI 2024</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="tracks.html">Tracks</a></li>
-          <li><a href="registration.html">Registration</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased bg-gray-100 text-gray-900">
+    <header class="bg-gray-900 text-white py-4" style="background-color: #212121;">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-3xl font-bold" >DRISHTI 2024</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                  <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+                  <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+                  <li><a href="tracks.html" class="hover:text-gray-400">Tracks</a></li>
+                  <li><a href="registration.html" class="hover:text-gray-400">Registration</a></li>
+                  <li><a href="important_dates.html" class="hover:text-gray-400">Important Dates</a></li>
+                  <li><a href="call_for_papers.html" class="hover:text-gray-400">Call for Papers</a></li>
+                  <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-      <section class="tracks">
-        <h2>Conference Tracks</h2>
-        <div class="track">
-          <h3>Track 1: Contemporary Management Practices</h3>
-          <ul>
-            <li>Recent Trends in Finance, HR & Marketing</li>
-            <li>Business Analytics</li>
-            <li>IT & Business</li>
-            <li>Emerging Concerns in E-Business</li>
-            <li>Globalization Impact on Business Ecosystem</li>
-            <li>Changes in Business Taxation and Laws</li>
-            <li>Sustainable Green Business Practices</li>
-          </ul>
-        </div>
-        <div class="track">
-          <h3>Track 2: Advanced Technologies in Computing and Communication</h3>
-          <ul>
-            <li>
-              Communication Systems, VLSI, Embedded System and Signal Processing
-            </li>
-            <li>Computer Vision, Image Processing</li>
-            <li>Artificial Intelligence and Machine Learning</li>
-            <li>Parallel and Distributed Computing</li>
-            <li>Computer Architecture and High-Performance Computing</li>
-          </ul>
-        </div>
-        <div class="track">
-          <h3>Track 3: Sustainable Practices in Engineering & Science</h3>
-          <ul>
-            <li>Energy-Efficient Production Technologies</li>
-            <li>Waste Heat Recovery and Utilization</li>
-            <li>Renewable Energy Integration in Manufacturing</li>
-            <li>Sustainable Materials Selection and Usage</li>
-            <li>Life Cycle Assessment (LCA) of Manufacturing Processes</li>
-            <li>Lean and Green Manufacturing Practices</li>
-            <li>Thermal Energy Storage Systems for Industrial Applications</li>
-            <li>Integration of Renewable Energy in Industrial Operations</li>
-            <li>
-              Sustainable Supply Chain Management in the Manufacturing Sector
-            </li>
-            <li>Environmental Science and Policy Integration</li>
-            <li>Sustainable Energy Systems</li>
-            <li>Climate Change Adaptation and Resilience</li>
-            <li>Sustainable Innovation and Technology</li>
-            <li>Water and Environmental Management</li>
-            <li>Ecosystem Conservation and Restoration</li>
-          </ul>
-        </div>
-      </section>
+    <main class="container mx-auto p-6">
+        <section class="tracks">
+            <h2 class="text-4xl font-bold mb-8 text-center">Conference Tracks</h2>
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-white rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-4" style="color: #c2574f;">Track 1: Contemporary Management Practices</h3>
+                    <ul class="list-disc pl-6">
+                        <li class="mb-2">Recent Trends in Finance, HR & Marketing</li>
+                        <li class="mb-2">Business Analytics</li>
+                        <li class="mb-2">IT & Business</li>
+                        <li class="mb-2">Emerging Concerns in E-Business</li>
+                        <li class="mb-2">Globalization Impact on Business Ecosystem</li>
+                        <li class="mb-2">Changes in Business Taxation and Laws</li>
+                        <li class="mb-2">Sustainable Green Business Practices</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-4" style="color: #c2574f;">Track 2: Advanced Technologies in Computing and Communication</h3>
+                    <ul class="list-disc pl-6">
+                        <li class="mb-2">Communication Systems, VLSI, Embedded System and Signal Processing</li>
+                        <li class="mb-2">Computer Vision, Image Processing</li>
+                        <li class="mb-2">Artificial Intelligence and Machine Learning</li>
+                        <li class="mb-2">Parallel and Distributed Computing</li>
+                        <li class="mb-2">Computer Architecture and High-Performance Computing</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-4" style="color: #c2574f;">Track 3: Sustainable Practices in Engineering & Science</h3>
+                    <ul class="list-disc pl-6">
+                        <li class="mb-2">Energy-Efficient Production Technologies</li>
+                        <li class="mb-2">Waste Heat Recovery and Utilization</li>
+                        <li class="mb-2">Renewable Energy Integration in Manufacturing</li>
+                        <li class="mb-2">Sustainable Materials Selection and Usage</li>
+                        <li class="mb-2">Life Cycle Assessment (LCA) of Manufacturing Processes</li>
+                        <li class="mb-2">Lean and Green Manufacturing Practices</li>
+                        <li class="mb-2">Thermal Energy Storage Systems for Industrial Applications</li>
+                        <li class="mb-2">Integration of Renewable Energy in Industrial Operations</li>
+                        <li class="mb-2">Sustainable Supply Chain Management in the Manufacturing Sector</li>
+                        <li class="mb-2">Environmental Science and Policy Integration</li>
+                        <li class="mb-2">Sustainable Energy Systems</li>
+                        <li class="mb-2">Climate Change Adaptation and Resilience</li>
+                        <li class="mb-2">Sustainable Innovation and Technology</li>
+                        <li class="mb-2">Water and Environmental Management</li>
+                        <li>Ecosystem Conservation and Restoration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-      <p>&copy; 2024 DRISHTI International Conference. All Rights Reserved.</p>
+    <footer class="bg-gray-900 text-white py-4 text-center mt-auto" style="background-color: #212121;">
+        <div class="container mx-auto">
+            <p>&copy; 2024 DRISHTI International Conference. All Rights Reserved.</p>
+        </div>
     </footer>
-  </body>
+</body>
 </html>

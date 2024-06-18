@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DRISHTI - 2024</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <h1>DRISHTI - 2024</h1>
-        <p>
-          International Conference on Management, Engineering, Science &
-          Technology
-        </p>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="tracks.html">Tracks</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="important_dates.html">Important Dates</a></li>
-            <li><a href="call_for_papers.html">Call for Papers</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom Tailwind Config */
+        .gradient-bg {
+            background: linear-gradient(135deg, #c2574f 0%, #ff6f61 100%);
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1; /* This pushes the footer to the bottom */
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-gray-100 text-gray-900">
+    <header class="bg-gray-900 text-white py-4" style="background-color: #212121;">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-3xl font-bold">DRISHTI - 2024</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+                    <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+                    <li><a href="tracks.html" class="hover:text-gray-400">Tracks</a></li>
+                    <li><a href="registration.html" class="hover:text-gray-400">Registration</a></li>
+                    <li><a href="important_dates.html" class="hover:text-gray-400">Important Dates</a></li>
+                    <li><a href="call_for_papers.html" class="hover:text-gray-400">Call for Papers</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-      <section class="hero">
-        <div class="container">
-          <h2>Welcome to DRISHTI - 2024</h2>
-          <p>A New Era in Management, Engineering, Science & Technology</p>
-          <a href="registration.html" class="btn">Register Now</a>
-        </div>
-      </section>
-      <section class="about">
-        <div class="container">
-          <h2>About the Conference</h2>
-          <p>The International Conference DRISHTI 2024 ...</p>
-        </div>
-      </section>
+    <main class="container mx-auto justify-center p-6">
+        <section class="hero gradient-bg text-white p-12 rounded-lg shadow-lg mb-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl font-bold mb-4 leading-tight">Welcome to DRISHTI - 2024</h2>
+                <p class="mb-6 text-2xl">A New Era in Management, Engineering, Science & Technology</p>
+                <a href="registration.html" class="inline-block bg-white text-black text-theme font-bold py-3 px-8 rounded-lg shadow-md hover:bg-gray-200 transition duration-300">Register Now</a>
+            </div>
+        </section>
+        
+        <section class="about bg-white p-8 rounded-lg shadow-lg text-center justify-center flex">
+            <div class="max-w-3xl ">
+                <h2 class="text-2xl font-bold text-theme mb-4">About the Conference</h2>
+                <p class="mb-4">The International Conference DRISHTI 2024 brings together leading academic scientists, researchers, and scholars to exchange and share their experiences and research results on all aspects of Management, Engineering, Science & Technology.</p>
+            </div>
+        </section>
     </main>
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 Vivekananda College of Engineering & Technology</p>
-      </div>
+    <footer class="bg-gray-900 text-white py-4 text-center" style="background-color: #212121;">
+        <div class="container mx-auto">
+            <p>&copy; 2024 DRISHTI International Conference. All Rights Reserved.</p>
+        </div>
     </footer>
-  </body>
+</body>
 </html>

@@ -1,40 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Important Dates - DRISHTI 2024</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>DRISHTI 2024</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="tracks.html">Tracks</a></li>
-          <li><a href="registration.html">Registration</a></li>
-          <li><a href="important_dates.html">Important Dates</a></li>
-          <li><a href="call_for_papers.html">Call for Papers</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+        /* Custom Tailwind Config */
+        .gradient-bg {
+            background: linear-gradient(135deg, #c2574f 0%, #ff6f61 100%);
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1; /* This pushes the footer to the bottom */
+        }
+
+        .icon-date {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon-date svg {
+            margin-right: 8px;
+            color: #c2574f;
+        }
+
+        .date-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 16px;
+            margin: 8px 0;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-gray-100 text-gray-900">
+    <header class="bg-gray-900 text-white py-4" style="background-color: #212121;">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-3xl font-bold">DRISHTI - 2024</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+                    <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+                    <li><a href="tracks.html" class="hover:text-gray-400">Tracks</a></li>
+                    <li><a href="registration.html" class="hover:text-gray-400">Registration</a></li>
+                    <li><a href="important_dates.html" class="hover:text-gray-400">Important Dates</a></li>
+                    <li><a href="call_for_papers.html" class="hover:text-gray-400">Call for Papers</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-      <section class="important-dates">
-        <h2>Important Dates</h2>
-        <ul>
-          <li>Abstract Submission: 20th July 2024</li>
-          <li>Full Paper Submission: 21st August 2024</li>
-          <li>Intimation of Acceptance: 31st August 2024</li>
-          <li>Registration and Confirmation: 4th September 2024</li>
-          <li>Conference Date: 11th September 2024</li>
-        </ul>
-      </section>
+    <main class="container mx-auto justify-center p-6">
+        <section class="important-dates bg-white p-8 rounded-lg shadow-lg text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-theme mb-6">Important Dates</h2>
+                <ul class="list-none text-left text-lg space-y-4">
+                    <li class="date-card">
+                        <div class="icon-date">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10M3 11h18M4 19h16a2 2 0 002-2v-7a2 2 0 00-2-2H4a2 2 0 00-2 2v7a2 2 0 002 2z"></path>
+                            </svg>
+                            <span><strong>Abstract Submission:</strong> 20th July 2024</span>
+                        </div>
+                    </li>
+                    <li class="date-card">
+                        <div class="icon-date">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10M3 11h18M4 19h16a2 2 0 002-2v-7a2 2 0 00-2-2H4a2 2 0 00-2 2v7a2 2 0 002 2z"></path>
+                            </svg>
+                            <span><strong>Full Paper Submission:</strong> 21st August 2024</span>
+                        </div>
+                    </li>
+                    <li class="date-card">
+                        <div class="icon-date">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10M3 11h18M4 19h16a2 2 0 002-2v-7a2 2 0 00-2-2H4a2 2 0 00-2 2v7a2 2 0 002 2z"></path>
+                            </svg>
+                            <span><strong>Intimation of Acceptance:</strong> 31st August 2024</span>
+                        </div>
+                    </li>
+                    <li class="date-card">
+                        <div class="icon-date">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10M3 11h18M4 19h16a2 2 0 002-2v-7a2 2 0 00-2-2H4a2 2 0 00-2 2v7a2 2 0 002 2z"></path>
+                            </svg>
+                            <span><strong>Registration and Confirmation:</strong> 4th September 2024</span>
+                        </div>
+                    </li>
+                    <li class="date-card">
+                        <div class="icon-date">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10M3 11h18M4 19h16a2 2 0 002-2v-7a2 2 0 00-2-2H4a2 2 0 00-2 2v7a2 2 0 002 2z"></path>
+                            </svg>
+                            <span><strong>Conference Date:</strong> 11th September 2024</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
-    <footer>
-      <p>&copy; 2024 DRISHTI International Conference. All Rights Reserved.</p>
+    <footer class="bg-gray-900 text-white py-4 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2024 DRISHTI International Conference. All Rights Reserved.</p>
+        </div>
     </footer>
-  </body>
+</body>
 </html>

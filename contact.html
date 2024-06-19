@@ -1,43 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - DRISHTI 2024</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>DRISHTI 2024</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="tracks.html">Tracks</a></li>
-          <li><a href="registration.html">Registration</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom Tailwind Config */
+        @layer base {
+            .bg-theme {
+                background-color: #c2574f;
+            }
+            .text-theme {
+                color: #c2574f;
+            }
+            .border-theme {
+                border-color: #c2574f;
+            }
+            .gradient-bg {
+                background: linear-gradient(135deg, #c2574f 0%, #ff6f61 100%);
+            }
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-gray-100 text-gray-900">
+    <header class="bg-gray-900 text-white py-4" style="background-color: #212121;">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-3xl font-bold" >DRISHTI 2024</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                  <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+                  <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+                  <li><a href="tracks.html" class="hover:text-gray-400">Tracks</a></li>
+                  <li><a href="registration.html" class="hover:text-gray-400">Registration</a></li>
+                  <li><a href="important_dates.html" class="hover:text-gray-400">Important Dates</a></li>
+                  <li><a href="call_for_papers.html" class="hover:text-gray-400">Call for Papers</a></li>
+                  <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-      <section class="contact">
-        <h2>Contact Us</h2>
-        <p>
-          If you have any queries or need further information, please feel free
-          to contact us at:
-        </p>
-        <h3>Conference Organizing Committee</h3>
-        <p>Email: drishti@vcetputtur.ac.in</p>
-        <p>Phone: +91-8251-234555</p>
-        <h3>Address</h3>
-        <p>
-          Vivekananda College of Engineering & Technology, Nehru Nagar, Puttur,
-          Karnataka, India
-        </p>
-      </section>
+    <main class="container mx-auto p-6">
+        <section class="contact bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-4xl font-bold mb-8 text-center text-theme">Contact Us</h2>
+            <p class="mb-4 text-lg text-center">
+                If you have any queries or need further information, please feel free to contact us at:
+            </p>
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold mb-4 text-theme">Conference Organizing Committee</h3>
+                <p class="mb-2 text-lg"><span class="font-bold">Email:</span> <a href="mailto:drishti@vcetputtur.ac.in" class="text-theme hover:underline">drishti@vcetputtur.ac.in</a></p>
+                <p class="mb-2 text-lg"><span class="font-bold">Phone:</span> <a href="tel:+918251234555" class="text-theme hover:underline">+91-8251-234555</a></p>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-4 text-theme">Address</h3>
+                <p class="text-lg">
+                    Vivekananda College of Engineering & Technology,<br>
+                    Nehru Nagar, Puttur, Karnataka, India
+                </p>
+            </div>
+        </section>
     </main>
-    <footer>
-      <p>&copy; 2024 DRISHTI International Conference. All Rights Reserved.</p>
+    <footer class="bg-gray-900 text-white py-4 text-center mt-auto" style="background-color: #212121;">
+        <div class="container mx-auto">
+            <p>&copy; 2024 DRISHTI International Conference. All Rights Reserved.</p>
+        </div>
     </footer>
-  </body>
+</body>
 </html>
